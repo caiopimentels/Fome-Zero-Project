@@ -104,7 +104,7 @@ st.sidebar.markdown("""---""")
 
 country_unique = df1['City'].unique()
 
-qtd_country = st.sidebar.slider('Quantos paises deseja ver?',min_value=0,max_value=len(country_unique))
+qtd_country = st.sidebar.slider('Quantas cidades deseja ver?',min_value=0,max_value=len(country_unique))
 
 if qtd_country < 6:
     qtd_country = 6

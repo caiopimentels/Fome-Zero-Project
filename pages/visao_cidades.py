@@ -95,7 +95,7 @@ st.set_page_config(
 #==================================
 # Barra Lateral Streamlit
 #==================================
-image = Image.open('../logo.png')
+image = Image.open('logo.png')
 st.sidebar.image(image, width=100)
 
 st.sidebar.markdown('# Fome Zero')

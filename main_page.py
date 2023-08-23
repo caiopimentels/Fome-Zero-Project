@@ -102,9 +102,14 @@ st.sidebar.markdown("""---""")
 
 country_unique = df1['Country Code'].unique()
 
+qtd_country = st.sidebar.slider('Quantos paises deseja ver?',min_value=0,max_value=len(country_unique))
+
+if qtd_country < 6:
+    qtd_country = 6
+
 country = st.sidebar.multiselect('Escolha o país que deseja filtrar',
                                 country_unique,
-                                default=country_unique[0:5])
+                                default=country_unique[0:qtd_country])
 
 selecao = df1['Country Code'].isin(country)
 df1 = df1.loc[selecao,:]

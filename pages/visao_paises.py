@@ -160,6 +160,6 @@ with st.container():
         st.markdown("""---""")
 
     with col2:
-        st.markdown('### Média de avaliação por país')
+        st.markdown('### Preço médio de um prato para dois')
         grafico = graficos_mean('Average Cost for two','.2s')
         st.markdown("""---""")

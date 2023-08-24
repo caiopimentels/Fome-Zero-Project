@@ -145,7 +145,7 @@ df1 = df1.loc[selecao,:]
 # Main Page
 #==================================
 st.markdown('# Visão por Tipos de Pratos')
-st.markdown('## Melhores resutantes por tipos de pratos culinários')
+st.markdown('## Melhores restaurantes por tipos de pratos culinários')
 
 with st.container():
     col1, col2, col3, col4, col5 = st.columns(5, gap='small')
